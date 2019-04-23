@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Minu isetehtud skript
+#
+echo  "Arro Tahur " #väljastan ees- ja perekonnanime koos reavahetusega
+echo "ISP218 " #väljastan õppegrupi koos reavahetusega
+echo "väga huvitav " #väljastan enda emotsiooni antud aine suhtes
+echo  "Imeline " #väljastan enda praegust muljet
+echo "17 " #väljastan enda vanuse
+#
+#  skripti lõpp
