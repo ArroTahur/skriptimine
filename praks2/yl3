@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#
+echo "Arro Tahur " #väljastab minu ees-ja perenime
+echo "ISP218 " #väljastab mu õppegrupi
+echo "huvitav, veidi mõtlemist vajav " #väljastab minu mulje antud ainest
+echo "väga korralik " #väljendab minu muljet ja edasijõudmist
+#
+#
+# lõpp

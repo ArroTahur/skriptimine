@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+#
+cut -d: -f5 /etc/passwd #lõika välja /etc/passwd kaustast viies (5.) väli, kus sisaldub eesnimi ja perenimi
+#
+#
+# skripti lõpp 
