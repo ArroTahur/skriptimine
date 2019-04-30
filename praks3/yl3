@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# uptime skript
+#
+uptime #käsk, mis näitab masina töötamisaega.
+#
+# lõpp
