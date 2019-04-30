@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# bussireisid
+echo -n "Mitu reisijat on sinu grupis? " #küsib, palju reisijaid on
+read reisijad #loeb vastust
+echo -n "Mitu kohta on Teie bussis? " #küsib, palju kohti on bussis
+read kohad #loeb kohti
+#
+buss=`expr $reisijad / $kohad` #määrab $bussile väärtuse
+ylej22nud=`expr $reisijad % $kohad` #määrab $ylej22nud väärtuse
+echo "Täielikult täidetud busse on $buss ja yle jaab $ylej22nud inimest "
+# annab kasutajale lõppvastuse
+#
+# lõpp
