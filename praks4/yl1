@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# tervitusskript, küsimisega
+#
+echo -n "Palun sisesta oma ees- ja perenimi: " #väljastab kasutajale teksti, mis palub sisestada ees- ja perenime
+read eesnimi perenimi #loeb, mida kasutaja kirjutas
+echo "Tere tulemast, $eesnimi $perenimi " #väljastab  eesnime ja perenime, selle põhjal mida kirjutati.
+#
+# lõpp
