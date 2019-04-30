@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# algus
+#
+echo -n "Sisesta oma nimi: " #küsib kasutaja nime
+read nimi 
+echo "Tere tulemast, $nimi! " #tervitab teda nimega
+echo "Palun sisesta oma  sünniaasta!" #küsib sünniaastat
+read aasta
+vanus=`expr 2019 - $aasta` #arvutab välja vanuse
+echo "$nimi, oled $vanus aastat vana." #annab lõppvastuse
+#
+# lõpp
