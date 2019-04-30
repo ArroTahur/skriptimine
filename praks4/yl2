@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+echo "Palun sisesta suurused sentimeetrites " #teadaanne kasutajale
+#
+echo -n "Aluskandiku pikkus? " #küsib aluskandiku pikkust
+read pikkus
+echo -n "Aluskandiku laius? " #seejärel laiust
+read laius
+echo -n "Kypsise pindala? " #küsib kypsise pindala
+read kypsisepindala
+#
+echo "Mitu kihti tordile soovite? " #küsib kihtide arvu tordil
+read kihid
+echo "Mitu kypsist on yhes pakis? " #küsib küpsiste arvu ühes pakis.
+read arv
+kandik=`expr $pikkus \* $laius` #arvutab kandiku pindala
+kihipindala=`expr $kandik / $kypsisepindala` #arvutab ühe kihi pindala
+kypsistearv=`expr $kihipindala / $kihid` #arvutab, palju küpsiseid vaja on
+kypsistepakid=`expr $kypsistearv / $arv` #arvutab arvutab, palju pakke läheb
+lisakypsis=`expr $kypsistearv % $arv` #arvutab, palju küpsiseid üle jääb.
+echo "Sul on vaja $kypsistepakid pakki küpsist ning $lisakypsis lisakypsist!"
+#
+# lõpp
