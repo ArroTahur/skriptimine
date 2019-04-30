@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# otsimisskript
+'find' /var -type f -name ".log" #poolik skript, vaja leida .log failid kaustast /var
+#
+#
+# lõpp
+
