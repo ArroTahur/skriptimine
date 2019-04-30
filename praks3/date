@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# date  skript
+echo kuupäev: $(date +"%A,%B,%Y") #väljendab hetkelist päeva (A), kuud (B) ja aastat (Y).
+echo kell: $(date +"%I:%M") #väljendab hetkelist kellaaega tundides ja minutites.
+echo -n "Kalender"
+cal
+# lõpp
+
