@@ -3,14 +3,9 @@
 #
 echo "Sisesta ringi raadius (CM)"
 read raadius
-echo "sisesta pi"
-read pi
 #
-r2=`expr $raadius \* $raadius`
-pindala=`$pi \* $r2`
-diameeter=`$raadius \* $raadius`
-ymbermoot=`$pi \* $diameeter`
-#
+ymbermoot=$(echo "$raadius * 2 * 3.14" | bc )
+pindala=$(echo "$raadius ^ 2 * 3.14" | bc )
 #
 echo "Sinu ringi pindala on $pindala cm ja ümbermõõt $ymbermoot cm"
 #
