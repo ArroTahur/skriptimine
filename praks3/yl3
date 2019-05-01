@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # uptime skript
-#
-uptime #käsk, mis näitab masina töötamisaega.
-#
+echo -n $HOSTNAME "töötab alates:  "
+uptime | cut -f1 -d "," #lõikab välja esimese välja (f1) uptime käsust
 # lõpp
