@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#
+katalooginimi="/home/user/skriptimine/praks4a/test"
+
+date=$(date +"%d.%m.%y")
+aeg=$(date +"%R")
+
+baasnimi="($basename $katalooginimi)" #võtame katalooginimest ainult nime
+asukoht="/home/user/skriptimine/praks4a/backup/$baasnim.backup.$aeg.$date.tar.gz" #määrab failile asukoha, koos date ja andmetega.
+tar -zcvf $asukoht $katalooginimi #pakib faili kokku
+
+echo "Kataloogi $katalooginimi backupi nimi on $baasnimi.backup.$aeg.$date.tar.gz ja ta asub $asukoht" #väljastab seletava kirjelduse
+#
+# skripti lõpp
