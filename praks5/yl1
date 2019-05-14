@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+echo -n "Sisesta kylje A vaartus: "
+read a
+echo -n "Sisesta kylje B vaartus: "
+read b
+h=$(bc <<< "sqrt($a^2 + $b^2)")  #sqrt paneb valemi ruutu (aruudus + bruudus)
+echo -n "Kolmnurga hypotenuus on $h cm! "
