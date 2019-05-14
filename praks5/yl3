@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+echo -n "Sisestage päev, kuna l2hete puhkusele (Pyhapaev 0.. Laupaev 6): "
+read p 
+echo -n "Mitu ööpäeva olete puhkusel? "
+read o
+mitu=$(($o % 7))
+kuna=$(($p + $mitu))
+echo "Tagasi oled päeval $kuna! "
+#
