@@ -1,0 +1,12 @@
+#!/bin/bash
+echo -n "Sisesta kolmnurga A kylje vaartus: "
+read a
+echo -n "Sisesta kolmnurga B kylje vaartus: "
+read b
+echo -n "Sisesta kolmnurga C kylje vaartus: "
+read c
+h=$(bc <<< "scale=2;($a + $b + $c) / 2") #arvutab pool ymbermootu, mida hiljem kasutame
+s=$(bc <<< "scale=2;;sqrt($h * ($h - $a) *  ($h - $b) * ($h - $c))") #heroni valem
+echo -n "Kolmnurga pindala on $s cm2! "
+# lõpp
+

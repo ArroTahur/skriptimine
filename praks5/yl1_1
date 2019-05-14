@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+echo -n "Sisesta kylg A " 
+read a
+echo -n "Sisesta kylg B "
+read b
+c=$(bc <<< "scale=3;sqrt($a^2 + $b^2)") #scale=mitu kohta peale koma
+echo -n "Kolmnurga hypotenuus on $c CM! "
+# lõpp
