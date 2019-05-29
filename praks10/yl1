@@ -1,0 +1,18 @@
+#!/bin/bash
+echo -n "Sisesta oma vanus: "
+read vanus
+if [ $vanus -ge 0 -a $vanus -le 10 ]
+then
+echo "Oled veel laps"
+elif [ $vanus -ge 11 -a $vanus -le 17 ]
+then
+echo "Oled nooruk"
+elif [ $vanus -ge 18 -a $vanus -le 63 ]
+then
+echo "Oled taiskasvanu"
+elif [ $vanus -ge 63 ]
+then
+echo "Oled seenior"
+else
+echo "Sisesta palun oige vanus"
+fi
