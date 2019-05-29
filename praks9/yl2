@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+
+echo -n "Sisestage ridade arv: "
+read row
+
+echo -n "Sisetage t2rnide arv reas: "
+read t
+n=1
+
+for (( i = 1; i <= $row; i++ ))
+do
+echo -n "$n."
+let n++
+for (( j = 1; j <= $t; j++ ))
+do
+echo -n "* "
+done
+echo ""
+done
