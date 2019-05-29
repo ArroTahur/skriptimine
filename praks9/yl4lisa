@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+echo -n "Sisesta ridade arv: "
+read row
+
+
+for (( i = 1; i <= $row; i++ ))
+do
+echo -n "$i."
+for (( j = $row; j >= $i; j-- ))
+do
+echo -n "*"
+done
+echo ""
+done
+
